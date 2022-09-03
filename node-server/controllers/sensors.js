@@ -19,7 +19,7 @@ export const getBunchSensors = async (req, res) => {
 }
 
 export const createSensor =  async(req, res) => {
-    const lightScaled = (4095 - req.body.light) / 4095.0 * 100;
+    const lightScaled = Math.round((4095 - req.body.light) / 4095.0 * 10000)/100.0;
     const sensor = {
         moist: req.body.moist,
         light: lightScaled,
