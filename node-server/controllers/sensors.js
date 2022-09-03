@@ -11,7 +11,7 @@ export const getSensor = async (req, res) => {
 
 export const getBunchSensors = async (req, res) => {
     try {
-        const sensorModel = await SensorModel.find().sort({createdAt:-1}).limit(req.body.count);
+        const sensorModel = await SensorModel.find().sort({createdAt:-1}).limit(10);
         res.status(200).json(sensorModel);
     } catch(error){
         res.status(404).json({ message: error.message });
