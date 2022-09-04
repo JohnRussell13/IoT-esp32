@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "a92fe522-3621-445c-8cd4-d75d1764914c",
+		"name": "IoT UES",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20163700"
+	},
+	"item": [
+		{
+			"name": "Sensors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}",
+					"host": [
+						"{{HOST}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensors Bunch",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}/bunch",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"bunch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sensors",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"moist\": 40,\n    \"light\": 3562,\n    \"temp\": 22.1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}",
+					"host": [
+						"{{HOST}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
