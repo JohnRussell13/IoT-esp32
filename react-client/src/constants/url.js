@@ -1,1 +1,1 @@
-export const BACKEND = 'http://ec2-3-82-144-59.compute-1.amazonaws.com';
+export const BACKEND = 'http://18.206.68.25';
