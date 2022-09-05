@@ -12,7 +12,7 @@
 #define PIN_DHT11 13                                                                              // Moisture/Temp sensor DHT11 connected to PIN 13
 
 #define BUFF_SIZE 128                                                                             // Max package size
-#define ADDRESS "http://ec2-54-86-62-253.compute-1.amazonaws.com/sensors"                         // Public endpoint address
+#define ADDRESS "http://ec2-18-206-68-25.compute-1.amazonaws.com/"                                // Public endpoint address
 #define PAUSE 60000                                                                               // Pause between samples in ms
 
 dht DHT;                                                                                          // Used for sampling DHT11
