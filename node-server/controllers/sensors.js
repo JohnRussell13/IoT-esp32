@@ -19,6 +19,9 @@ export const getBunchSensors = async (req, res) => {
 }
 
 export const createSensor =  async(req, res) => {
+    if (isNaN(req.body.moist) || isNaN(req.body.light) || isNaN(req.body.temp)) {
+        res.status(400).json();
+    }
     const lightScaled = Math.round((4095 - req.body.light) / 4095.0 * 10000)/100.0;
     const sensor = {
         moist: req.body.moist,
