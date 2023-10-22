@@ -1,0 +1,7 @@
+In order to run (sudo node app.js) with restarts and load balancing, install:
+
+sudo npm i -g pm2
+
+and run:
+
+sudo pm2 app.js
